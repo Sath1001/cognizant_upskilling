@@ -1,0 +1,153 @@
+/* Universal Selector */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #f4f4f4;
+}
+
+/* Hero Section */
+
+.hero-section {
+
+    height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)
+        ),
+
+        url('images/event4.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Welcome Banner */
+
+#welcomeBanner {
+
+    background-color: rgba(0,0,255,0.3);
+
+    padding: 30px;
+
+    border-radius: 20px;
+}
+
+/* Highlight Class */
+
+.highlight {
+
+    color: darkblue;
+}
+
+/* Cards */
+
+.card {
+
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.card:hover {
+
+    transform: scale(1.03);
+}
+
+/* Gallery */
+
+.gallery-img {
+
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+
+    border: 3px solid black;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+/* Table */
+
+table {
+
+    background-color: white;
+}
+
+/* Zebra Striping */
+
+tr:nth-child(even) {
+
+    background-color: #f2f2f2;
+}
+
+/* Form */
+
+form {
+
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Focus */
+
+input:focus,
+textarea:focus,
+select:focus {
+
+    outline: 3px solid #0d6efd;
+}
+
+/* Multi Column Layout */
+
+.multi-column {
+
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+}
+
+/* Footer */
+
+footer {
+
+    margin-top: 50px;
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+    .hero-section h1 {
+
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+
+        font-size: 1rem;
+    }
+
+    .gallery-img {
+
+        height: 150px;
+    }
+
+    #searchInput {
+
+        width: 100% !important;
+        margin-top: 20px;
+    }
+}
